@@ -55,6 +55,7 @@ function ConnectUI(props: ConnectUIProps<EmbeddedWallet>) {
 
 			await wallet.connect({ authResult });
 
+			setAuthStatus('logged-in');
 			setConnectedWallet(wallet);
 			setConnectionStatus('connected');
 
